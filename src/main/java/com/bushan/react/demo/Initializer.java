@@ -36,8 +36,7 @@ public class Initializer implements CommandLineRunner {
 		bjug.setEvents(Collections.singleton(e));
 		repository.save(bjug);
 		
-		repository.findAll().forEach(System.out::println);
-		
+		repository.findAll().forEach(group -> System.out.println(group.getName()));
 		
 	} 
 	
